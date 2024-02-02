@@ -1,0 +1,101 @@
+:root {
+    --texto: #111111;
+    --principal: #820053;
+    --oscuro: #1c1921;
+    --claro: #dddddd;
+    --secundario: rgb(206, 127, 0);
+}
+
+html,
+body {
+
+    margin: 0px;
+
+    height: 100%;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 15px;
+    background: var(--oscuro);
+
+
+
+
+}
+
+#header {
+    display: flex;
+    justify-content: flex-end;
+    background: white;
+    padding: 15px;
+
+}
+
+#nombre {
+    margin-right: 15px;
+
+}
+
+#botones {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#navbar {
+    background: white;
+
+}
+
+#boton {
+
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#footer {
+    background: white;
+    padding: 15px;
+    position: absolute;
+    /*El div será ubicado con relación a la pantalla*/
+    left: 0px;
+    /*A la derecha deje un espacio de 0px*/
+    right: 0px;
+    /*A la izquierda deje un espacio de 0px*/
+    bottom: 0px;
+    /*Abajo deje un espacio de 0px*/
+
+}
+
+#textoF {
+    text-align: center;
+
+}
+
+#map {
+    width: 60%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 70vh;
+}
+
+#enunciados {
+    width: 40%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 70vh;
+}
+
+#container {
+    display: inline-flex;
+    width: 100%;
+    height: 70vh;
+}

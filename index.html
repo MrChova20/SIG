@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="shortcut icon" href="brujula.ico" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link id="template-file" href="madrid_acci.html" rel="import" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit-no">
+    <!--Que se pose el zoom al puesto-->
+    <title>Mapa del sistema de la información geográfica</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+
+    <header id="header" role="banner">
+        <div id="nombre">
+            <a>ALVARO ESCRIBANO RODRIGO - PABLO CHOVA APARISI</a>
+        </div>
+
+    </header>
+    <hr style="color: black" />
+    <section id="section">
+        <nav id="navbar">
+            <div id="botones">
+                <button id="boton" type="button" class="btn btn-light" onclick="practica1()">Práctica 1</button>
+                <div class="dropdown">
+                    <button id="boton" class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Práctica 3
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item" onclick="practica2Temp()">Temperatura</a>
+                        <a class="dropdown-item" onclick="practica2Pre()">Precipitaciones</a>
+                    </div>
+                </div>
+                <button id="boton" type="button" class="btn btn-light" onclick="practica4()">Práctica 4</button>
+                <button id="boton" type="button" class="btn btn-light" onclick="practica5()">Práctica 5</button>
+                <button id="boton" type="button" class="btn btn-light" onclick="practica7()">Práctica 7</button>
+                <button id="boton" type="button" class="btn btn-light" onclick="practica8()">Práctica 8</button>
+                <button id="boton" type="button" class="btn btn-light" onclick="practica9()">Práctica 9</button>
+                <button id="boton" type="button" class="btn btn-light" onclick="practica10()">Práctica 10</button>
+            </div>
+        </nav>
+        <hr style="color: black;" />
+        <div id="container">
+            <iframe src="madrid_acci.html" id="map"></iframe>
+            <iframe id="enunciados"></iframe>
+        </div>
+
+
+
+    </section>
+    <hr style="color: black" />
+
+    <footer id="footer">
+        <p id="textoF">Hecho por ALVARO ESCRIBANO RODRIGO - PABLO CHOVA APARISI</p>
+        <p id="textoF">Pulsa los botones para ver los sistemas de información geográficas eleborados en las prácticas</p>
+    </footer>
+
+
+</body>
+
+<script>
+    function practica1() {
+        document.getElementById('map').src = 'Prac1.PNG';
+        document.getElementById('enunciados').src = 'enunciadosPracticas/prac1.pdf';
+
+    }
+
+    function practica2Temp() {
+        document.getElementById('map').src = 'MAPA_TEMPERATURAS.pdf';
+        document.getElementById('enunciados').src = 'enunciadosPracticas/prac3.pdf';
+
+    }
+
+    function practica2Pre() {
+        document.getElementById('map').src = 'MAPA_PRECIPITACIONES.pdf';
+        document.getElementById('enunciados').src = 'enunciadosPracticas/prac3.pdf';
+
+    }
+
+    function practica4() {
+        document.getElementById('map').src = 'prac4.html';
+        document.getElementById('enunciados').src = 'enunciadosPracticas/prac4.pdf';
+
+
+    }
+
+    function practica5() {
+        document.getElementById('map').src = 'PRAC5.html';
+        document.getElementById('enunciados').src = 'enunciadosPracticas/prac5.pdf';
+
+
+    }
+
+    function practica7() {
+        document.getElementById('map').src = 'Waypoints.html';
+        document.getElementById('enunciados').src = 'redimiento.png';
+
+    }
+
+    function practica8() {
+        document.getElementById('map').src = 'madrid_acci.html';
+        document.getElementById('enunciados').src = 'heatmap_acci.html';
+    }
+
+    function practica9() {
+        document.getElementById('map').src = 'mapa_EVI.html';
+        document.getElementById('enunciados').src = 'mapa_SAVI.html';
+
+    }
+
+    function practica10() {
+        document.getElementById('map').src = 'LANDSAT7.html';
+        document.getElementById('enunciados').src = 'LANDSAT8.html';
+
+    }
+</script>
+
+</html>
